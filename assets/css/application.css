@@ -1,0 +1,6 @@
+body {background: url(/assets/images/mg5.jpg); background-repeat: no-repeat; background-size: cover;}
+
+.loading {margin-top: 30%;}
+.loading h1 {color: #FFF;}
+
+.footer-container {height: 400px; background-color: #e6e6e6;opacity: 0.5;}
