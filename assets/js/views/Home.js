@@ -1,14 +1,14 @@
 define(
-  "views/HomePageFooter",
+  "views/Home",
   [
     "backbone",
-    "text!templates/HomePageFooter.html"
+    "text!templates/home/body.html"
   ],
-  function(Backbone, HomePageFooter){
+  function(Backbone, HomePageFooter, HomePageBody){
     "use strict"
 
     return Backbone.View.extend({
-      el: $("#footer-container"),
+      el: $("#content"),
       template: HomePageFooter,
 
       init: function(){

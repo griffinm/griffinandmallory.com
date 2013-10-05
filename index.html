@@ -8,21 +8,49 @@
 </head>
 <body>
 
-  <!-- loading -->
-  <div class="row loading" stlye="display: block;">
-    <div class="col-md-offset-5 col-md-span2">
-
+  <!-- begin nav -->
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Griffin and Mallory</a>
     </div>
-  </div>
-  <!-- end loading -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="/home">Home</a>
+        </li>
+        <li>
+          <a href="">Link 1</a>
+        </li>
+        <li>
+          <a href="">Link 2</a>
+        </li>
+        <li>
+          <a href="">Link 3</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul> <!-- end drop down menu -->
+        </li><!-- end dropdown li -->
+      </ul><!-- end nav buttons -->
+    </div>
+  </nav>
+  <!-- end nav -->
 
-  <!-- page content -->
-  <div class="content-container" style="display: none;">
-    <div id="navbar-container"></div>
-    <div id="footer-container"></div>
 
-  </div>
-  <!-- end page content -->
+  <div id="content"></div>
+  <footer></footer>
 
   <!-- Javascript includes for global namespace -->
   <script type="text/javascript" src="/assets/js/jquery-1.10.2.js"></script>
@@ -35,32 +63,13 @@
   $(document).ready(function(){
     require(
       [
-        "views/NavBar",
-        "views/HomePageFooter"
+        "backbone",
+        "routers/router"
       ], 
-      function(NavBar, HomePageFooter){
-
-        //Preload images
-        var imagesToLoad = ["/assets/images/mg5.jpg"];
-        loadedImages = new Array();
-        for (i = 0; i < imagesToLoad.length; i++) {
-          loadedImages[i] = new Image()
-          loadedImages[i].src = imagesToLoad[i]
-        }
-
-        //Render content
-        nav = new NavBar();
-        footer = new HomePageFooter();
-        nav.init(); 
-        footer.init();
-
-        //Show content
-        $(".loading").fadeOut(1500, function(){
-          //Set the background image of the page
-          $(".content-container").fadeIn("slow", function(){
-
-          });
-        });
+      function(Backbone, AppRouter){
+        router = new AppRouter();
+        Backbone.history.start();
+        router.navigate("home", {trigger: true});
     });
   });
   </script>

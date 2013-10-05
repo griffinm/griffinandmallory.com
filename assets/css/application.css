@@ -1,6 +1,10 @@
-body {background: url(/assets/images/mg5.jpg); background-repeat: no-repeat; background-size: cover;}
+.image-header {background: url(/assets/images/mg3.jpg); background-repeat: no-repeat;height:540px; background-size: 100%;}
 
-.loading {margin-top: 30%;}
+.navbar {margin-bottom: 0;}
+
+.loading {margin-top: 0%;}
 .loading h1 {color: #FFF;}
 
 .footer-container {height: 400px; background-color: #e6e6e6;opacity: 0.5;}
+
+.callout-container {margin-top: -70px;}
