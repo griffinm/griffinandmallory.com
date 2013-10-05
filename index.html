@@ -5,54 +5,22 @@
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background: url('assets/images/mg2.jpg'); background-repeat: no-repeat; background-size: cover;">
-  <!-- begin nav -->
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Griffin and Mallory</a>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="">Link 1</a>
-        </li>
-        <li>
-          <a href="">Link 2</a>
-        </li>
-        <li>
-          <a href="">Link 3</a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul> <!-- end drop down menu -->
-        </li><!-- end dropdown li -->
-      </ul><!-- end nav buttons -->
-    </div>
-  </nav>
-  <!-- end nav -->
+<body style="background-repeat: no-repeat; background-size: cover;">
 
-  <!-- header -->
-  <div class="row">
-    <div class="col-md-offset-1 col-md-span-10">
-
-    </div>  
+  <!-- loading -->
+  <div class="row loading" stlye="display: block;">
+    <div class="col-md-offset-5 col-md-span2" style="margin-top: 100px;">
+      <h2>Loading...</h2>
+    </div>
   </div>
-  <!-- end header -->
+  <!-- end loading -->
+
+  <!-- page content -->
+  <div class="content-container" style="display: none;">
+    <div id="navbar-container"></div>
+
+  </div>
+  <!-- end page content -->
 
   <!-- Javascript includes for global namespace -->
   <script type="text/javascript" src="/assets/js/jquery-1.10.2.js"></script>
@@ -62,7 +30,15 @@
   <!-- end javascript includes for global namespace -->
 
   <script type="text/javascript">
-    
+    require(["views/NavBar"], function(NavBar){
+      nav = new NavBar();
+      nav.init();
+
+      $(".loading").fadeOut('slow', function(){
+        $(".content-container").fadeIn();
+      });
+      
+    });
   </script>
 </body>
 </html>
