@@ -1,3 +1,5 @@
+body {padding-bottom: 70px;}
+
 .image-header {background: url(/assets/images/mg3.jpg); background-repeat: no-repeat;height:540px; background-size: 100%;}
 
 .navbar {margin-bottom: 0;}
@@ -8,3 +10,5 @@
 .footer-container {height: 400px; background-color: #e6e6e6;opacity: 0.5;}
 
 .callout-container {margin-top: -70px;}
+
+.overlay-container {margin-top: 340px; background-color: #e6e6e6; opacity: 0.5;}
