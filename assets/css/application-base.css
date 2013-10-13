@@ -208,10 +208,10 @@ input[type="color"]:hover,
 ------------------------- */
 [class^="icon-"],
 [class*=" icon-"] {
-  background-image: url(assets/img/glyphicons-halflings.png);
+  background-image: url(/assets/img/glyphicons-halflings.png);
 }
 [class*="icon-tpl"] {
-  background-image: url(assets/img/intro-icons.png);
+  background-image: url(/assets/img/intro-icons.png);
 }
 /* Contact form 7
 ------------------------- */
@@ -395,9 +395,9 @@ input[type="color"]:hover,
 /*
  * SPECIAL STYLES
 ---------------------------------------------------------- */
-/* Hearder
+/* Home
 ------------------------- */
-.section.header {
+.home-section {
   background: url(/assets/img/pattern-4.jpg);
   border-width: 1px 0;
   border-style: solid;
@@ -406,25 +406,25 @@ input[type="color"]:hover,
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) inset;
 }
-.header .hero-unit h1 {
+.home-section .hero-unit h1 {
   color: #308f8c;
 }
-.header .hero-unit p {
+.home-section .hero-unit p {
   color: #3aaca9;
 }
-/* Introducing
+/* Story
 ------------------------- */
-.introducing .section-img {
+.story-section .section-img {
   border-color: #dfdacd;
   background: #dfdacd;
 }
-.introducing .block:hover .section-img {
+.story-section .block:hover .section-img {
   border-color: #CAC2AD;
   background: #CAC2AD;
 }
-/* Portfolio
+/* Briday Party
 ------------------------- */
-.section.portfolio {
+.briday-party-section {
   background: url(/assets/img/pattern-3.jpg);
   border-width: 1px 0;
   border-style: solid;
@@ -433,34 +433,34 @@ input[type="color"]:hover,
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25) inset;
 }
-.portfolio .section-title h1 {
+.briday-party-section .section-title h1 {
   color: #95412c;
 }
-.portfolio .section-title p {
+.briday-party-section .section-title p {
   color: #ffffff;
 }
-.portfolio .section-content .section-content-title,
-.portfolio .section-content .section-content-title a {
+.briday-party-section .section-content .section-content-title,
+.briday-party-section .section-content .section-content-title a {
   color: #95412c;
 }
-.portfolio .section-content .thumbnail:hover .section-content-title a {
+.briday-party-section .section-content .thumbnail:hover .section-content-title a {
   color: #95412c;
 }
-.portfolio .section-content .thumbnail .meta {
+.briday-party-section .section-content .thumbnail .meta {
   color: #ffffff;
 }
-.portfolio .section-content .carousel-nav:before {
+.briday-party-section .section-content .carousel-nav:before {
   background: #f78f76;
 }
-.portfolio .section-content .carousel-nav ul {
+.briday-party-section .section-content .carousel-nav ul {
   background: url(/assets/img/pattern-3.jpg);
 }
-.portfolio .section-content .carousel-nav li {
+.briday-party-section .section-content .carousel-nav li {
   border-color: #a94831;
   background: #bc4b30;
 }
-.portfolio .section-content .carousel-nav li.active span,
-.portfolio .section-content .carousel-nav li:hover span {
+.briday-party-section .section-content .carousel-nav li.active span,
+.briday-party-section .section-content .carousel-nav li:hover span {
   background: #ff7454;
 }
 .project-details {
