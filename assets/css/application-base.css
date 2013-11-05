@@ -1,4 +1,6 @@
 
+.accomodation-container {text-align: center;}
+
 @font-face {
   font-family: 'homestead_regularregular';
   src: url('/assets/font/homestead-regular-webfont.eot');
