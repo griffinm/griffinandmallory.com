@@ -1,5 +1,7 @@
 
 .accomodation-container {text-align: center;}
+.carousel-inner h3 {display: inline; text-align: left;}
+.carousel-inner p {text-align: left;}
 
 @font-face {
   font-family: 'homestead_regularregular';
