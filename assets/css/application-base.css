@@ -3,6 +3,18 @@
 .carousel-inner h3 {display: inline; text-align: left;}
 .carousel-inner p {text-align: left;}
 
+/* d8d55c */
+.calendar-row {}
+.calendar-row .date { }
+.calendar-row {padding-top: 30px;}
+.calendar-cell h2 {text-align: center; color: #a9862b; font-size: 38px; margin-bottom: 5px;}
+.calendar-cell h3 {text-align: center; color: #a9862b; margin-top: 2px;}
+
+.calendar-cell {paddingL 10}
+.calendar-cell .event  {padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-top: 15px;  text-align: center;}
+.calendar-cell .event h5 {text-align: center; color: #444035; display: inline; font-size: 32px;}
+.calendar-cell .event p {display: inline; font-size: 16px; display: block;}
+
 @font-face {
   font-family: 'homestead_regularregular';
   src: url('/assets/font/homestead-regular-webfont.eot');
