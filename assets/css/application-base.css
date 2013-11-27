@@ -15,6 +15,9 @@
 .calendar-cell .event h5 {text-align: center; color: #444035; display: inline; font-size: 32px;}
 .calendar-cell .event p {display: inline; font-size: 16px; display: block;}
 
+.subscribe-form .mc-embedded-subscribe {margin-top: 0;}
+.subscribe-form {padding-top: 15px;}
+
 @font-face {
   font-family: 'homestead_regularregular';
   src: url('/assets/font/homestead-regular-webfont.eot');
