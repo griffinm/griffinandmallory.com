@@ -29,7 +29,7 @@
  * CORE HTML
 ---------------------------------------------------------- */
 body {
-  background-image: url(/assets/img/pattern-1.jpg);
+  background-image: url(/assets/img/background.jpg);
   font-family: arial, serif;
   font-size: 12px;
   text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.25);
@@ -259,7 +259,7 @@ input[type="color"]:hover,
 /* Main Nav
 ------------------------- */
 .navbar-inner {
-  background: url(/assets/img/pattern-1.jpg) #efebe0;
+  background: url(/assets/img/background.jpg) #efebe0;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-static-top .container,
@@ -417,7 +417,8 @@ input[type="color"]:hover,
 /* Home
 ------------------------- */
 .home-section {
-  background: url(/assets/img/pattern-4.jpg);
+  background: url(/assets/img/website-pattern.png);
+  background-color: #69C8BE;
   border-width: 1px 0;
   border-style: solid;
   border-color: #FFFBEF;
@@ -444,7 +445,7 @@ input[type="color"]:hover,
 /* Briday Party
 ------------------------- */
 .briday-party-section {
-  background: url(/assets/img/pattern-3.jpg);
+  background-color: #F59182;
   border-width: 1px 0;
   border-style: solid;
   border-color: #FFFBEF;
@@ -540,7 +541,7 @@ input[type="color"]:hover,
 /* Clients
 ------------------------- */
 .section.clients {
-  background-image: url(/assets/img/pattern-2.jpg);
+  background-color: #F5CD69;
   border-width: 1px 0;
   border-style: solid;
   border-color: #FFFBEF;
