@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'rochester_regular';
+  src: url('/assets/font/rochester_regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .accomodation-container {text-align: center;}
 .carousel-inner h3 {display: inline; text-align: left;}
@@ -18,13 +24,10 @@
 .subscribe-form .mc-embedded-subscribe {margin-top: 0;}
 .subscribe-form {padding-top: 15px;}
 
-@font-face {
-  font-family: 'homestead_regularregular';
-  src: url('/assets/font/homestead-regular-webfont.eot');
-  src: url('/assets/font/homestead-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/font/homestead-regular-webfont.woff') format('woff'), url('assets/font/homestead-regular-webfont.ttf') format('truetype'), url('assets/font/homestead-regular-webfont.svg#homestead_regularregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
+#accomodations h3 {font-size: 22px;}
+#accomodations .accomodation-container p {margin-bottom: 0;}
+#accomodations .accomodation-description {font-size: 14px;}
 /* 
  * CORE HTML
 ---------------------------------------------------------- */
@@ -43,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'homestead_regularregular', serif;
+  font-family: 'rochester_regular', serif;
   font-weight: normal;
 }
 /* Links
