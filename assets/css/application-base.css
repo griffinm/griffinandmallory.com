@@ -27,7 +27,7 @@
 
 #accomodations h3 {font-size: 22px;}
 #accomodations .accomodation-container p {margin-bottom: 0;}
-#accomodations .accomodation-description {font-size: 14px;}
+.accomodation-description {font-size: 14px;}
 /* 
  * CORE HTML
 ---------------------------------------------------------- */
