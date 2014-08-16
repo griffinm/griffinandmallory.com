@@ -5,6 +5,38 @@
   font-style: normal;
 }
 
+.place-container.active, .place-container.active:hover {
+  background: #F5CD69;
+}
+
+
+.place-container:hover {
+  background: #e5e5e5;
+}
+
+.place-container .address-details{
+  display: none;
+}
+
+.place-container.active .address-details{
+  display: block;
+}
+
+.place-container h3 {
+  font-family: 'homestead_regularregular', serif;
+  font-size: 22px;
+  color: #000;
+  margin: 0;
+}
+
+.nav.map-nav-tabs > li {
+  margin-left: 5px;
+}
+
+#map_canvas {
+  height: 600px;
+}
+
 .accomodation-container {text-align: center;}
 .carousel-inner h3 {display: inline; text-align: left;}
 .carousel-inner p {text-align: left;}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thing To Do | Mallory &amp; Griffin</title>
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <link href="/assets/css/application-base.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/assets/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <meta name="author" content="Griffin Mahoney">
+    <meta charset="UTF-8">
+
+    <script>
+      locations = {
+        'ceremony': 'Wychmere Harbor Beach',
+        'rehearsalDinner': 'Mooncussers Tavern 86 Sisson Rd',
+        'afterParty': 'Ember Pizza 600 Massachusetts 28 02646',
+        'brunch': 'Chatham Bars Inn Chatham MA'
+
+      }
+
+      $(document).ready(function(){
+        $('.place-container').on('click', showAddress);
+      });
+
+      function showAddress(e){
+        var place = $(e.target).closest('.place-container').attr('data-place'),
+          location = encodeURIComponent(locations[place]),
+          link = 'https://www.google.com/maps/embed/v1/place?q=' + location + '&key=AIzaSyDoH86X85ex3Ba3PGW5uG1wB8ikaY-TkBQ';
+
+        $("#map").attr('src', link);
+
+        //Mark the clicked item as active
+        $('.place-container').removeClass('active');
+        $(e.target).closest('.place-container').addClass('active');
+      }
+    </script>
+  </head>
+  <body>
+      <!-- start nav -->
+      <nav id="nav" class="navbar navbar-fixed-top ">
+        <div class="navbar-inner">
+          <div class="container">
+            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li class="active home-link-container"><a href="/#home">Home</a></li>
+                <li class="story-link-container"><a href="/#story">Our Story</a></li>
+                <li class="bridal-party-link-container"><a href="/#bridal-party">Bridal Party</a></li>
+                <li class="where-to-stay-link-container"><a href="/#dress-code">Dress Code/What To Wear</a></li>
+                <li class="schedule-link-container"><a href="/#festivities">Festivities</a></li>
+                <li class="schedule-link-container"><a href="/#registry">Registry</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- end navbar-inner -->
+      </nav>
+      <!-- end nav -->
+
+      <!-- Header -->
+      <section id="home" class="section hidden-title home-section style-1" style="padding-top: 0; padding-bottom: 30px;">
+        <div class="section-content row-fluid">
+          <div class="header">
+            <div class="hero-unit">
+              <h1>M &amp; G Wedding Weekend: Things to do</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Header -->
+      <div class="row-fluid" style="background: #FFF;">
+        <div class="span4">
+
+          <ul class="nav nav-tabs map-nav-tabs">
+            <li class="active"><a href="#tab-wedding-events" data-toggle="tab">Wedding Events</a></li>
+            <li><a href="#tab-eat" data-toggle="tab">Eat</a></li>
+            <li><a href="#tab-relax" data-toggle="tab">Relax</a></li>
+            <li><a href="#tab-explore" data-toggle="tab">Explore</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab-wedding-events">
+
+              <i>Click on the items for more detail</i>
+
+              <div class="row-fluid place-container active" data-place="ceremony">
+                <div class="span10 offset1">
+                  <h3>Ceremony/Reception</h3>
+                  <address>
+                    <strong>Wychmere Beach Club</strong>
+                    <div class="address-details">
+                      23 Snow Inn Rd<br>
+                      Harwich Port, MA<br>
+                      (617) 854 5000
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <div class="row-fluid place-container" data-place="afterParty">
+                <div class="span10 offset1">
+                  <h3>After Party</h3>
+                  <address>
+                    <strong>Ember Pizza</strong><br>
+                    <div class="address-details">
+                      600 Massachusetts 28<br>
+                      Harwich Port, MA 02646<br>
+                      (508) 430-0407
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <div class="row-fluid place-container" data-place="brunch">
+                <div class="span10 offset1">
+                  <h3>Farewell Brunch</h3>
+                  <address>
+                    <strong>Chatham Bars Inn</strong><br>
+                    <div class="address-details">
+                      297 Shore Rd<br>
+                      Chatham, MA 02633<br>
+                      (508) 945-0096
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <div class="row-fluid place-container" data-place="rehearsalDinner">
+                <div class="span10 offset1">
+                  <h3>Rehearsal Dinner</h3>
+                  <i>Invite Only</i>
+                  <address>
+                    <strong>Mooncusser's Tavern</strong><br>
+                    <div class="address-details">
+                      86 Sisson Rd<br>
+                      Harwich Port, MA 02646<br>
+                      (508) 430-1230
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane" id="tab-eat">
+              <p>eat</p>
+            </div>
+            <div class="tab-pane" id="tab-relax">
+              <p>relax</p>
+            </div>
+            <div class="tab-pane" id="tab-explore">
+              <p>explore</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="span8">
+          <iframe id="map" width="100%" height="600" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Wychmere%20Harbor%20Beach%20&key=AIzaSyDoH86X85ex3Ba3PGW5uG1wB8ikaY-TkBQ"></iframe>
+        </div>
+      </div>
+
+      </div>
+
+      <a class="map-link" data-place="86+Sisson+Rd,+" href="#">Home</a>
+      <a class="map-link" data-place="70+Fawcett+St,+Cambridge" href="#">Home</a>
+  </body>
+</html>
