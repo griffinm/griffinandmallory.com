@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Thing To Do | Mallory &amp; Griffin</title>
+    <title>Things To Do | Mallory &amp; Griffin</title>
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -20,8 +20,21 @@
         'ceremony': 'Wychmere Harbor Beach',
         'rehearsalDinner': 'Mooncussers Tavern 86 Sisson Rd',
         'afterParty': 'Ember Pizza 600 Massachusetts 28 02646',
-        'brunch': 'Chatham Bars Inn Chatham MA'
-
+        'brunch': 'Chatham Bars Inn Chatham MA',
+        'ginas': 'Ginas by the sea 134 taunton rd 02638',
+        'katies' : '284 Paines Creek rd 02631',
+        'lostDogPub': 'Lost Dog Pub East Dennis 02641',
+        '28': 'twenty-eight atlantic east harwich 02633',
+        'brewsterFishHouse': 'brewster fish house 2208 main st brewster ma',
+        'buca': 'bucas tuscan roadhouse 4 depot rd 02645',
+        'brax': 'brax landing restaurent 704 Massachusetts 28 02645',
+        'bike': '430 Massachusetts 134 south dennis ma 02660',
+        'ptown': 'Provincetown Ma',
+        'chathamCenter': 'chatham candy manor 484 main st 02633',
+        'brewsterGeneralStore': 'brewster general store 1935 main st 02631',
+        'nausetBeach': 'Nauset Beach, Eastham, MA',
+        'piratesCove': 'Pirates Cove Inc, Yarmouth, MA',
+        'monomoy': 'monomoy island',
       }
 
       $(document).ready(function(){
@@ -53,12 +66,13 @@
             </button>
             <div class="nav-collapse collapse">
               <ul class="nav pull-right">
-                <li class="active home-link-container"><a href="/#home">Home</a></li>
+                <li class="home-link-container"><a href="/#home">Home</a></li>
                 <li class="story-link-container"><a href="/#story">Our Story</a></li>
                 <li class="bridal-party-link-container"><a href="/#bridal-party">Bridal Party</a></li>
                 <li class="where-to-stay-link-container"><a href="/#dress-code">Dress Code/What To Wear</a></li>
                 <li class="schedule-link-container"><a href="/#festivities">Festivities</a></li>
                 <li class="schedule-link-container"><a href="/#registry">Registry</a></li>
+                <li class="active schedule-link-container"><a href="/thingstodo.html">Things To Do</a></li>
               </ul>
             </div>
           </div>
@@ -90,7 +104,7 @@
           <div class="tab-content">
             <div class="tab-pane active" id="tab-wedding-events">
 
-              <i>Click on the items for more detail</i>
+              <i style="padding-left: 10px;">Click on the items for more detail</i>
 
               <div class="row-fluid place-container active" data-place="ceremony">
                 <div class="span10 offset1">
@@ -150,14 +164,245 @@
               </div>
 
             </div>
-            <div class="tab-pane" id="tab-eat">
-              <p>eat</p>
+            <div class="tab-pane" id="tab-eat" style="overflow: scroll; height: 560px;">
+              
+              <p style="padding-left: 10px;">These are some of our favorite places to eat in the area.</p>
+              <i style="padding-left: 10px;">Click on the items for more detail</i>
+
+              <!-- Gina's by the sea -->
+              <div class="row-fluid place-container active" data-place="ginas">
+                <div class="span10 offset1">
+                  <h3>Gina's by the Sea</h3>
+                  <p><i>Italian &amp; Seafood </i><strong>$$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      134 Taunton Ave<br>
+                      Dennis, MA 02638<br>
+                      (617) 854 5000
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Katies seafood and icecream -->
+              <div class="row-fluid place-container" data-place="katies">
+                <div class="span10 offset1">
+                  <h3>Katie's Seafood and Icecream</h3>
+                  <p><i>Seafood &amp; Icecream </i><strong>$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      284 Paine's Creek Rd
+                      Brewster, MA 02631
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Lost Dog Pub -->
+              <div class="row-fluid place-container" data-place="lostDogPub">
+                <div class="span10 offset1">
+                  <h3>Lost Dog Pub</h3>
+                  <p><i>Seafood &amp; Traditional American </i><strong>$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      1374 Massachusetts 134<br>
+                      East Dennis, MA 02641<br>
+                      (508) 385 6177
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Bruce's Tuscan roadhouse -->
+              <div class="row-fluid place-container" data-place="buca">
+                <div class="span10 offset1">
+                  <h3>Bruce's Tuscan Roadhouse</h3>
+                  <p><i>Italian </i><strong>$$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      4 Depot Rd<br>
+                      Harwich. MA 02645<br>
+                      (508) 432 6900
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Brax Landing -->
+              <div class="row-fluid place-container" data-place="brax">
+                <div class="span10 offset1">
+                  <h3>Brax Landing</h3>
+                  <p><i>Seafood </i><strong>$$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      705 Massachusetts 28<br>
+                      Harwich, MA 02645<br>
+                      (508) 432 5515
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Mooncusser's -->
+              <div class="row-fluid place-container" data-place="rehearsalDinner">
+                <div class="span10 offset1">
+                  <h3>Mooncusser's Tavern</h3>
+                  <p><i>New American &amp Tapas </i><strong>$$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      86 Sisson Rd<br>
+                      Harwich Port, MA 02646<br>
+                      (508) 430-1230
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Ember -->
+              <div class="row-fluid place-container" data-place="afterParty">
+                <div class="span10 offset1">
+                  <h3>Ember Pizza</h3>
+                  <p><i>Pizza! &amp; Pasta </i><strong>$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      600 Massachusetts 28<br>
+                      Harwich Port, MA 02646<br>
+                      (508) 430-0407
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- 28 Atlantic -->
+              <div class="row-fluid place-container" data-place="28">
+                <div class="span10 offset1">
+                  <h3>Twenty-Eight Atlantic</h3>
+                  <p><i>Seafood &amp; New American </i><strong>$$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      2173 Massachusetts 28<br>
+                      East Harwich, MA 02633<br>
+                      (508) 430 3000
+                    </div>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Brewser fish house -->
+              <div class="row-fluid place-container" data-place="brewsterFishHouse">
+                <div class="span10 offset1">
+                  <h3>Brewster Fish House</h3>
+                  <p><i>Seafood </i><strong>$$$</strong></p>
+                  <address>
+                    <div class="address-details">
+                      2208 Main St<br>
+                      Brewster, MA 02631<br>
+                      (508) 896 7867
+                    </div>
+                  </address>
+                </div>
+              </div>
+
             </div>
             <div class="tab-pane" id="tab-relax">
-              <p>relax</p>
+              
+              <i style="padding-left: 10px;">Click on the items for more detail</i>
+
+              <!-- Nauset Beach -->
+              <div class="row-fluid place-container" data-place="nausetBeach">
+                <div class="span10 offset1">
+                  <h3>Nauset Beach</h3>
+                  <div class="address-details">
+                    <p>An amazing beach with huge dunes and big waves. Rent a paddleboard or a surfboard from nearby Nauset Surf Shop, or gran some lunch at Liam's clam shack.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Piates Cove -->
+              <div class="row-fluid place-container" data-place="piratesCove">
+                <div class="span10 offset1">
+                  <h3>Pirates Cove</h3>
+                  <div class="address-details">
+                    <p>A sunny mini-golf course with a pirate theme. A great option if you're all beached out!</p>
+                    <address>
+                      728 Main St<br>
+                      South Yarmouth, MA 02664<br>
+                      (508) 394 6200
+                    </address>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Monomoy Wildlife -->
+              <div class="row-fluid place-container" data-place="monomoy">
+                <div class="span10 offset1">
+                  <h3>Monomoy Wildlife Refuge</h3>
+                  <div class="address-details">
+                    <p>Go bird watching and seal viewing - but watch out for sharks! Check out <a href="http://monomoyislandferry.com/">monomoyislandferry.com</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Monomoy Wildlife -->
+              <div class="row-fluid place-container" data-place="ptown">
+                <div class="span10 offset1">
+                  <h3>Whale Watching - Provincetown</h3>
+                  <div class="address-details">
+                    <p>Cap Code is the summer home of hunreds of humpback whales! Schedule a trip to see them at <a href="http://whalewatch.com">whalewatch.com</a></p>
+                  </div>
+                </div>
+              </div>
+
             </div>
             <div class="tab-pane" id="tab-explore">
-              <p>explore</p>
+              
+              <i style="padding-left: 10px;">Click on the items for more detail</i>
+
+              <!-- Cape Code Rail Trail -->
+              <div class="row-fluid place-container" data-place="bike">
+                <div class="span10 offset1">
+                  <h3>Cape Code Rail Trail</h3>
+                  <div class="address-details">
+                    <p>This 25 mile path spans from Dennis to Wellfleet. Bring your own bike, or rent one from a local shop like Barb's Bike Shop</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Downtown Provincetown -->
+              <div class="row-fluid place-container" data-place="ptown">
+                <div class="span10 offset1">
+                  <h3>Downtown Provincetown</h3>
+                  <div class="address-details">
+                    <p>Take a scenic drive tot he end of the Cape for restaurants, shops, and some of the best people watching on the east coast.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chatham Center -->
+              <div class="row-fluid place-container" data-place="chathamCenter">
+                <div class="span10 offset1">
+                  <h3>Chatham Center</h3>
+                  <div class="address-details">
+                    <p>A seaside chic town town filled with galleries, restaurants, and shops. Be sure to stop at the Chatham Candy Manor!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Brewster General Store -->
+              <div class="row-fluid place-container" data-place="brewsterGeneralStore">
+                <div class="span10 offset1">
+                  <h3>Brewster General Store</h3>
+                  <div class="address-details">
+                    <p>An old-fashioned general store with all kinds of antiques, oddities, "penny" candy, fudge and oh so much more.</p>
+                    <address>
+                      1935 Main St<br>
+                      Brewster, MA 02631<br>
+                      (508) 896 3744
+                    </address>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -167,9 +412,6 @@
         </div>
       </div>
 
-      </div>
 
-      <a class="map-link" data-place="86+Sisson+Rd,+" href="#">Home</a>
-      <a class="map-link" data-place="70+Fawcett+St,+Cambridge" href="#">Home</a>
   </body>
 </html>

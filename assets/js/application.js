@@ -2,12 +2,12 @@ var onAnimate = false;
 
 $(function(){
 	var currentHash = ""
-	$("#nav li").on("click", function(){
+	$("#nav li.page-link").on("click", function(){
     $("nav li").removeClass("active");
 		$(this).addClass("active");
 	});
 
-	$('#nav .nav a').click(function(e){
+	$('#nav .nav li.page-link a').click(function(e){
 		e.preventDefault();
 		var des = $(this).attr('href');
 		goToSectionID(des);
